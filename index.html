@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Muli:400,700|Raleway:400,700" rel="stylesheet">
+<style>
+/* * {
+  box-sizing: border-box;
+} */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* [class*="col-"] {
+  float: left;
+  padding: 15px;
+} */
+
+body {
+  margin: 0px;
+}
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.logo {
+  overflow: hidden;
+  position: relative;
+  top: -90px;
+  left: -7.5%;
+  width: 115%;
+  transform: rotate(-7deg);
+  background-color: #752dd0;
+  height:130px;
+}
+
+.logo_h2 {
+  color: #FFFFFF;
+  vertical-align:bottom;
+  padding: 100px 100px 10px 150px;
+  transform: rotate(7deg);
+}
+
+.header {
+  top: -100px;
+  overflow: hidden;
+  width: 115%;
+  left: -7.5%;
+  position: relative;
+  color: #ffffff;
+  background-color: #7447d7;
+  transform: rotate(-7deg);
+  height: 300px;
+  margin: 0px;
+
+}
+
+h1 {
+  font-family: 'Muli';
+  font-weight: 700;
+  font-size: 40px;
+}
+
+ul {
+  float: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_li {
+  display: inline;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.get_website{
+  text-align: center;
+  /* padding: 10px; */
+  color: #FFFFFF;
+  transform: rotate(7deg);
+}
+
+.nav {
+  padding: 0 150px 0 0;
+  text-align: right;
+  color: #FFFFFF;
+  transform: rotate(7deg);
+}
+
+.green_button {
+  background-color: #81d398;
+  border-radius: 5px;
+  padding: 10px 25px 10px 25px;
+  color: #FFFFFF;
+
+}
+
+.domain_input {
+  border-radius: 5px;
+  padding: 12.5px 17.5px 12.5px 17.5px;
+  color: grey;
+  font-size: 14px;
+  width: 250px;
+}
+
+.green_large_button {
+  background-color: #81d398;
+  border-radius: 5px;
+  padding: 12.5px 17.5px 12.5px 17.5px;
+  color: #FFFFFF;
+  font-size: 14px;
+
+}
+
+.learn {
+  top: -100px;
+  overflow: visible;
+  width: 115%;
+  left: -7.5%;
+  position: relative;
+  padding: 10px;
+  background-color: #736fdf;
+  transform: rotate(-7deg);
+  height: 100px;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  justify-content: center;
+  margin: auto;
+
+
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.next {
+  background-color: #81d398;
+  font-size: 22px;
+  color: white;
+  height: 25px;
+  width: 25px;
+  padding: 15px;
+
+}
+
+.round {
+  border-radius: 50%;
+}
+
+.learn_inside {
+  padding: 40px 0 0 0 ;
+  transform: rotate(7deg)
+}
+
+.create {
+  text-align: center;
+  color: grey;
+  padding: 30px 0 50px 0;
+  font-size: 18px;
+  width: 50%;
+  margin: auto;
+
+}
+
+.create_account {
+  background-color: #736fdf;
+  color: #FFFFFF;
+  border-radius: 5px;
+  /* height: 30px; */
+  padding: 12.5px 17.5px 12.5px 17.5px;
+  font-size: 12px;
+}
+
+.contact_us {
+  border-radius: 5px;
+  /* height: 30px; */
+  padding: 12.5px 17.5px 12.5px 17.5px;
+  font-size: 12px;
+  color: grey;
+  border: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+
+}
+
+.services {
+  text-align: center;
+  color: grey;
+  margin: auto;
+}
+
+.title {
+  font-size: 22px;
+}
+.column {
+  float: left;
+  width: 35%;
+  padding: 10px;
+}
+
+.row {
+  margin: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  padding: 16px;
+  text-align: left;
+  background-color: #fcfcfc;
+  border: 1px solid #ececf1;
+  border-radius: 10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer_column {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .create {
+    padding: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .logo {
+    height: 150px;
+  }
+  .get_website{
+    text-align: center;
+    padding: 80px;
+  }
+  .domain_input {
+    margin: 5px;
+  }
+
+  .header {
+    height: 350px;
+  }
+  .nav {
+    padding: 40px 50px 10px 50px;
+    float: right;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  .nav {
+    padding: 30px 60px 10px 50px;
+    float: right;
+  }
+  .get_website{
+    text-align: center;
+    padding: 50px;
+  }
+
+  .logo_h2 {
+    color: #FFFFFF;
+    vertical-align:bottom;
+    padding: 90px 100px 10px 100px;
+    transform: rotate(7deg);
+  }
+}
+
+.contact_create_account {
+  padding: 20px;
+}
+
+.con_column {
+  background-color: transparent;
+  text-align: left;
+  margin: auto;
+  padding:10px;
+}
+
+.ready {
+  font-size: 22px;
+  color: #736fdf;
+}
+
+.create_contact {
+  font-size: 22px;
+  color: #7447d7;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  width: 100%;
+  background-color: #736fdf;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+  /* height: 200px; */
+  overflow: hidden;
+
+}
+
+.footer_column {
+  float: left;
+  width: 18%;
+  font-size: 14px;
+  padding: 10px;
+  /* float: left;
+  width: 35%;
+  padding: 10px; */
+}
+
+.side_footer_column {
+  float: left;
+  width: 12%;
+  padding: 15px 0  0;
+
+}
+
+.address {
+  line-height: 22px;
+  text-align: left;
+}
+
+.social {
+  line-height: 40px;
+  text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+  <div class="logo">
+    <h2 class="logo_h2">MyWebNow</h2>
+  </div>
+
+  <div class="header">
+      <div class="nav">
+        <li class="nav_li">Home</li>
+        <li class="nav_li">Why Us</li>
+        <li class="nav_li">Contact Us</li>
+        <li class="nav_li">Login</li>
+        <li class="nav_li"><button class="green_button">Support</button></li>
+      </div>
+    <div class="get_website">
+      <h1>Get a website in <br>15 minutes or less</h1>
+      <input type="text" class="domain_input" placeholder="Write your domain name here.."> <button class="green_large_button">Search</button>
+    </div>
+</div>
+
+  <div class="learn">
+    <div class="learn_inside">
+      <p>LEARN HOW WE CAN ENHANCE YOUR BUSINESS</p>
+      <a href="#" class="next round">&#8595;</a>
+    </div>
+  </div>
+
+  <div class="create">
+    <p >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <button class="create_account">CREATE YOUR ACCOUNT</button>
+  </div>
+
+  <div class="services">
+      <p class="title">Our Services</p>
+      <p>&#9146;&#9146;&#9146;&#9146;</p>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <h3>WEB HOSTING &#8594;</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3>RESELLERS &#8594;</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3>VPS HOSTING &#8594;</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <h3>CLOUD HOSTING &#8594;</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+  <div class="contact_create_account">
+    <div class="row">
+      <div class="con_column">
+        <p class="ready">Are you ready?<p>
+        <p class="create_contact">create an account, or contact us.</p>
+      </div>
+      <div class="con_column">
+      <button class="create_account">CREATE YOUR ACCOUNT</button> <button class="contact_us">CONTACT US</button>
+      </div>
+  </div>
+  </div>
+
+<div class="footer">
+  <div class="row">
+    <div class="column footer_column address">
+      <ul>
+        <p ><b>+1 800 WEBSITE</b></p>
+        <p >hello@mywebnow.com</p>
+        <p >1 Main St <br>Floor 6, <br>New York, NY 10005</p>
+      </ul>
+    </div>
+    <div class="column footer_column">
+      <ul>
+        <p><b>Company</b></p>
+        <p>About Us</p>
+        <p>News</p>
+        <p>FAQ</p>
+        <p>Contact Us</p>
+      </ul>
+    </div>
+    <div class="column footer_column">
+      <ul>
+        <p><b>Services</b></p>
+        <p>Web Hosting</p>
+        <p>Cloud Hosting</p>
+        <p>VPS Servers</p>
+        <p>Domain Names</p>
+      </ul>
+    </div>
+    <div class="column footer_column">
+      <ul>
+        <p><b>Others</b></p>
+        <p>Transfer Domains</p>
+        <p>Customer Portal</p>
+        <p>Support Portal</p>
+        <p>Video Tutorials</p>
+      </ul>
+    </div>
+    <div class="column footer_column side_footer_column">
+      <ul>
+        <li class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></li>
+        <li class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg></li>
+        <li class="social"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></li>
+      </ul>
+    </div>
+  </div>
+
+
+</body>
+</html>
